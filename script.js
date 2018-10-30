@@ -28,10 +28,17 @@
 // let answer = +prompt("Есть ли вам 18","Да");
 // console.log(typeof(answer));
 
-let inc = 10,
-    decr = 10;
+// let inc = 10,
+//     decr = 10;
 
-// let isChecked = false,
-// isclosed = false;
+    // inc++;
+    // decr--;
+    // console.log(inc++);
+    // console.log(decr--);
 
-// console.log(isChecked && isclosed);
+    // console.log(5%2);
+let go = 1;
+let isChecked = false,
+isclosed = false;
+
+console.log(isChecked && isclosed);
