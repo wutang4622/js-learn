@@ -42,3 +42,26 @@ let isChecked = false,
 isclosed = false;
 
 console.log(isChecked && isclosed);
+
+
+
+switch(num) {
+    case num < 5:
+        console.log("Неверно!");
+            break;
+    case num > 100:
+        console.log("Много");
+            break;
+    case 10: 
+        console.log("Верно");
+            break;
+    default : 
+        console.log("Что то пошло не так");
+            break;
+
+}
+let num = 10;
+while(num < 55) {
+    console.log(num);
+    num++;
+}
