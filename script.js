@@ -65,3 +65,30 @@ while(num < 55) {
     console.log(num);
     num++;
 }
+
+
+// function declaration выглядит таким образом и она будет доступна из любой точки кода
+function calc(a,b) {
+    return a + b;
+}
+
+//function expression выглядит таким образом и она НЕ будет доступна из любой точки кода
+
+let calc = function calc(a,b) {
+    return a + b;
+}
+
+// новый стандарт ES 6 function expression
+let calc = (a,b) => a+b;
+
+let str = "test";
+console.log(str.toUpperCase());
+console.log(str.toLowerCase());
+
+// let twelve = "12.4";
+// console.log(Math.round(twelve));
+
+let twelve = "12.2px";
+
+console.log(parseInt(twelve));
+console.log(parseFloat(twelve));
