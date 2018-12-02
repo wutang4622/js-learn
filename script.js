@@ -92,3 +92,96 @@ let twelve = "12.2px";
 
 console.log(parseInt(twelve));
 console.log(parseFloat(twelve));
+
+
+
+
+//объекты
+let options = {
+    width: 1024,
+    heigth: 1024,
+    name: "test"
+};
+
+//console.log(options.name);
+
+options.bool = false;
+// delete options.bool;
+
+
+
+options.colors = {
+    border: "black",
+    bg: "red"
+};
+
+// console.log(options);
+
+// перебрать объект циклом
+for(let key in options) {
+    console.log('Свойства ' + key + 'имеет значение ' + options[key]);
+}
+// получить количество свойств в объекте
+console.log(Object.keys(options).length);
+
+
+// let arr = [1,2,3,4,5];
+// arr.pop();
+// arr.push("5");
+// arr.shift();
+// arr.unshift("1");
+// console.log(arr);
+
+
+// let arr = [1,2,3,4,5];
+// arr.forEach(function(item, index, array){
+//     console.log(index + ': ' + item + ' (массив: ' + array + ')');
+// });
+
+// console.log(arr);
+
+// let array1 = [1,3,4,6,7];
+// for(let key of array1) {
+//     console.log(key);
+// }
+
+//метод split переводит строку в массив
+// let answer = prompt("", ""),
+//     array = [];
+
+//     array = answer.split(',');
+
+//метод join переводит массив в строку
+// let array = ["awwa","www","waaa","aaa"],
+//     element = array.join(', ');
+//     console.log(element);
+
+//сортирует элементы по алфавиту
+// let array = ["awwa","www","waaa","aaa"],
+//      element = array.sort();
+//      console.log(element);
+
+// та же самая сортировка только цифры
+// let array = [1,15,4],
+// element = array.sort(compare);
+
+// function compare(a,b) {
+//     return a - b;
+// }
+// console.log(array);
+
+//ООП наследование
+let soldier = {
+    health : 400,
+    armor : 100
+};
+
+let john = {
+    health: 100
+};
+
+john.__proto__ = soldier;
+
+console.log(john);
+console.log(john.armor);
+
